@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Math Quiz </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class = "header">
+		<div id = "bg"> 
+			<div id = "heading">
+				<span id = "text">Welcome to Math Quiz</span>
+			</div>
+			
+			<div id = "heading2">
+				<span id = "text2">Scroll down for sections</span>
+			</div>
+
+		</div>
+
+	</div>
+	<section>
+	<div class = "container"> 
+		
+		<h1> Select the section you want to test out </h1>
+		<div class = "buttons"> 
+			<button class = "btn" onclick="window.location.href = 'U1.html'"> Section 1 </button>
+			<button class = "btn"> Section 2 </button>
+			<button class = "btn"> Section 3 </button>
+			
+
+		</div>
+	</div>
+</section>
+<script type="text/javascript">
+	var headerBg = document.getElementById('bg')
+	window.addEventListener('scroll', function(){
+		headerBg.style.opacity = 1 - +window.pageYOffset/300+ ''
+		headerBg.style.top = pageYOffset+ 'px'
+		headerBg.style.backgroundPositionY = - +window.pageYOffset/2+ ''
+	})
+</script>
+
+</body>
+</html>
